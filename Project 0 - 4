@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+	int code_line = 0;
+	int study_day = 0;
+	while (code_line < 30001)
+	{
+		printf("写代码ing：%d 行 —— ", code_line);
+		printf("今天是用头发写代码的第 %d 天呢，加油！\n", study_day);
+		code_line++;
+		study_day++;
+	}
+	if (code_line == 30001)
+	{
+		printf("好耶，终于能毕业了，还有更远的征程等着你哦\n");
+		printf("记住，我们的征程是星辰大海！！！\n");
+	}
+	return 0;
+}
