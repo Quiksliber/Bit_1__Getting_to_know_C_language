@@ -1,0 +1,35 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+	int input = 0;
+	printf("学习鹏哥的C语言，\n");
+	printf("要不要自觉地好好学习？（如果要，请输入1；如果不要，请输入2）\n");
+	printf("你的选择是：");
+	scanf("%d", &input);
+
+	if (input == 1) 
+	{
+		printf("你将拿到一个好offer，考上一个好研究生。\n");
+	}
+	else
+	{
+		printf("你将永远被高考的失利禁锢。\n");
+		int input2 = 0;
+			printf("如果再给你一次机会，你会选择好好学习吗？（如果要，请输入1；如果不要，请输入2）\n");
+		printf("你的选择是：");
+		scanf("%d", &input2);
+
+		if (input2 == 1)
+		{
+			printf("虽然你不一定考上一个好研究生，但相信你可以取得人生的巨大进步。\n");
+		}
+		else
+		{
+			printf("你屡教不改，你的人生是失败的。\n");
+		}
+	}
+
+	
+	return 0;
+}
