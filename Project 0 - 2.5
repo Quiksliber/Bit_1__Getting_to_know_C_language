@@ -1,0 +1,18 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+enum sex // enum 为枚举关键字
+{
+    //这种枚举类型的未来可能取值
+    MALE, // 0
+    FEMALE, // 1
+    SECRET // 2
+    //枚举常量默认从0开始
+    //在 enum 句段可以赋初值，在 main 函数内无法修改。
+};
+int main()
+{
+    printf("%d\n", MALE); //输出为 0
+    printf("%d\n", FEMALE); //输出为 1
+    printf("%d\n", SECRET); //输出为 2
+    return 0;
+}
