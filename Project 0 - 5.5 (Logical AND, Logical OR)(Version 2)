@@ -1,0 +1,41 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+int main()
+{
+	int a = 0;
+	int b = 0;
+	printf("这是一个简单的逻辑验证程序，请根据提示进行操作。\n");
+	printf("请输入命题 A 的正误性（ 正确为 1 ，错误为 0 ）：");
+	scanf("%d", &a);
+	if (a = 1)
+	{
+		printf("您似乎认为命题 A 是正确的；\n");
+	}
+	else
+		printf("您似乎认为命题 A 是错误的；\n");
+	printf("请输入命题 B 的正误性（ 正确为 1 ，错误为 0 ）：");
+	scanf("%d", &b);
+	if (b = 1)
+	{
+		printf("您似乎认为命题 B 是正确的；\n");
+	}
+	else
+		printf("您似乎认为命题 B 是错误的；\n");
+	int c = a && b;//必须同时成立才为真
+	int d = a || b;//只要有一个成立即可
+	printf("此处记命题 C 为 A ∩ B \n");
+	printf("此处记命题 D 为 A ∪ B \n");
+	if (c = 1)
+	{
+		printf("命题 C 为真命题。\n");
+	}
+	else
+		printf("命题 C 为假命题。\n");
+	if (d = 1)
+	{
+		printf("命题 D 为真命题。\n");
+	}
+	else
+		printf("命题 D 为假命题。\n");
+	return 0;
+}
