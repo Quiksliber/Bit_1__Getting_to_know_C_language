@@ -10,7 +10,7 @@ int main()
 	int i = 1;
 	while (i < 11)
 	{
-		printf("请输入学员 %d 的答案（请务必输入大写英文字母 A 、B 、C 、D）：",i);
+		printf("请Enter the answer of student %d (please be sure to enter capital letters A , B , C , D): ",i);
 		scanf("%s", &ansi);
 		if (ansi == 'A')
 		{
@@ -47,10 +47,10 @@ int main()
 		}
 	}
 	i = i - 1;
-	printf("本次参加测试的学院有 %d 人\n", i);
-	printf("选择 A 答案的有 %d 人\n", a);
-	printf("选择 B 答案的有 %d 人\n", b);
-	printf("选择 C 答案的有 %d 人\n", c);
-	printf("选择 D 答案的有 %d 人\n", d);
+	printf("There are %d students participating in the test this time\n", i);
+	printf("There are %d people who chose the answer A\n", a);
+	printf("There are %d people who chose the answer B\n", b);
+	printf("There are %d people who chose the answer C\n", c);
+	printf("There are %d people who chose the answer D\n", d);
 	return 0;
 }
